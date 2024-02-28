@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+    <script>
+            function calcularAreaTerreno(largura,comprimento){
+
+                var Area = largura * comprimento
+
+                //document.write(Area)
+                console.log(Area)
+
+                return Area;
+            }
+
+            var largura = prompt('Digite a largura do terreno em metros quadrado!')
+            var comprimento = prompt('Digite a comprimento do terreno em metros quadrado!')
+
+            var Area = calcularAreaTerreno(largura,comprimento);
+            
+            document.write(`O terreno possui ${Area} metros quadrados!`)
+    </script>
+
+    <style>
+        body{
+            color: #fff;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        }
+    </style>
+
+</head>
+<body>
+
+   <!-- <h3>What if we rewrite the stars</h3> -->
+    
+</body>
+</html>

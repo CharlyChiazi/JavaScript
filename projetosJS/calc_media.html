@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java  Script</title>
+    <script>
+
+        alert('Comecamos!');
+
+       var p1 = prompt('Digite a p1 do estudante:');
+       var p2 = prompt('Digite a p2 do estudante:☻');
+
+       p1= parseFloat(p1);
+       p2 = parseFloat(p2);
+
+       var media = (p1 + p2)/2;
+
+        document.write('<br />');
+
+       document.write(`A media do estudante é de ${media} valores!`);
+
+       if (media >= 14) {
+    document.write('Estudante dispensado!');
+} else if (media === 14) {
+    document.write('Parabéns! O estudante aprovou com a nota exata de 14!');
+} else if (media >= 10 && media < 14) {
+    document.write('Parabéns! O estudante aprovou, porém poderia ter feito melhor!');
+} else if (media >= 7 && media < 10) {
+    document.write('Lamentavelmente o Estudante vai para o recurso!');
+} else if (media < 7) {
+    document.write('Lamentamos! Estudante reprovado (cara triste! kkk)');
+} else {
+    document.write('Erro! Valores inseridos acima do limite!');
+}
+
+    </script>
+    <style>
+        body{
+            color: #fff;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        }
+    </style>
+</head>
+<body>
+          
+</body>
+</html>
