@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+    <script>
+            function exibirArtigo(id,callbackSucesso, callbackErro){
+                //lógica: recuperar o ID via requisicao http
+                if (false){
+                    callbackSucesso('Funcoes de callback','Funcoes de callback sao muito usas em...')
+                } else{
+                    callbackErro('A pagina nao pode ser carregada!')
+                }
+
+            }
+
+            //exibirArtigo(1, function() {},function() {})
+
+            var callbackSucesso = function(titulo, descricao) {
+                document.write(`<h2> Titulo: ${titulo} <h2/> `)
+                document.write('<br />')
+                document.write(`<p> Descricao: ${descricao} <p/> `)
+            }
+            
+            var callbackErro = function(erro) {
+                document.write(`<p>  <strong>Erro:</strong> ${erro}  </p>`)
+            }
+            
+            exibirArtigo (1, callbackSucesso, callbackErro)
+
+    </script>
+
+    <style>
+        body{
+            color: #fff;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        }
+    </style>
+
+</head>
+<body>
+
+   <!-- <h3>What if we rewrite the stars</h3> -->
+    
+</body>
+</html>
