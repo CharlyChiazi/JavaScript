@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+
+    
+    <style>
+        body{
+            color: #fff;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        }
+
+        .tipo1{
+            background-color: #ccc;
+            border: 2px solid black;
+            width: 150px;
+            height: 300px;
+        }
+
+        .tipo2{
+            background-color: #000;
+            width: 400px;
+            height: 250px;
+            font-size: 26px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .btn{
+            padding: 5px;
+            color: #000;
+            border-radius: 5px;
+            border-style: none;
+        }
+
+    </style>
+    <!-- -------------------------------------------------------------------------------- -->
+    <script>
+        alert('Its a new day, yes it is!')
+        
+        function mudarEstilo(){
+            document.getElementById('getElem').className = 'tipo2'
+        }
+        
+        console.log(mudarEstilo())
+        
+        
+        </script>
+
+    <!-- --------------------------------------------------------------------------------☻Ä -->
+</head>
+<body>
+
+        <div id="getElem" class="tipo1">
+            esperando mudanca
+        </div>
+                <hr> <br>
+
+        <button 
+        class="btn" 
+        type="button" 
+        onclick="mudarEstilo()">
+            aplicando a mudanca
+        </button>
+   
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+
+    
+    <style>
+        body{
+            color: #fff;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        }
+
+        .afetar{
+            background-color: #ccc;
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+        }
+
+    
+    </style>
+
+
+    <script>
+        alert('Manipulando estilos!')
+        function mudarEstilo(corDeFundo, l, a){
+
+            document.getElementById('core').style.backgroundColor = corDeFundo
+            document.getElementById('core').style.width = l
+            document.getElementById('core').style.height = a
+        }
+        
+        
+
+
+
+    </script>
+
+</head>
+<body>
+        <h3>Estilo - Style</h3>
+
+        <button onclick="mudarEstilo('#FF0000', '90px', '900px')">vermelho</button>
+        <button onclick="mudarEstilo('#00FF00' ,'500px' , '800px')">verde</button>
+        <button onclick="mudarEstilo('#0000FF', '150px')">Azul</button>
+
+        <hr>
+
+        <div class="afetar" id="core">
+
+        </div>
+   
+    
+
+</body>
+</html>
