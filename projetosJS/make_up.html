@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma</title>
+
+    
+
+<!------------------------------------------------------------------------/-->
+    
+    <style>
+
+        body{
+            background-color: azure;
+            position: relative;
+            height: 100vh;
+            margin: 0;
+
+           
+
+        }
+
+        /* .sec1 {
+            background-color: #fff;
+            width: 500px;
+            text-align: center;
+            margin: auto;
+            height: 400px;
+        } */
+        
+        .sec1 {
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            height: 250px;
+            width: 600px;
+        }
+
+        button{
+    
+            display: inline-block;
+            padding: 9px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s ease;
+            margin-inline: 15px;
+        
+        }
+
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active{
+            background-color: #004785;
+        }
+
+        
+
+    
+       
+
+
+    </style>
+</head>
+<body>
+    
+
+    <section class="sec1">
+
+        
+
+                <div >
+                    <h2>Quer namorar comigo?</h2>
+                </div>
+                        <br> <br>
+                <div>
+                    <button onclick="aceitarNamoro()">
+
+                        Sim!
+                    </button>
+                        <!-- 0000000000000000000000000 -->
+                    <button id="botao" onclick="moverBotao()">
+                        Não!
+                    </button>
+                </div>
+        
+                    <!-- <p>
+                        como faço para inserir uma interatividade js num botão de modo que ao tentar clicar nele, ele mude de lugar aleatoriamente no ecrã de modo que não se consiga clicar nele?
+                    </p> -->
+
+    </section>
+    	
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("botao").addEventListener("click", moverBotao);
+        });
+    
+        function aceitarNamoro(){
+            alert('😍Own Amor, te farei muito feliz!😍')
+        }
+    
+        function moverBotao() {
+            const botao = document.getElementById("botao");
+        }
+    </script>
+</body>
+</html>
