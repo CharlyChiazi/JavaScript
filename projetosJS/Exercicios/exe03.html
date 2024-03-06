@@ -5,27 +5,91 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Move Button Randomly</title>
 <style>
-    #myButton {
+    .myButton {
         position: absolute;
-        left: 50%;
+        left: 40%;
+        top: 47.056%;
+        /* //transform: translate(-50%, -50%); */
+
+        display: inline-block;
+        padding: 9px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s ease;
+        margin-inline: 15px;
+    }
+
+    .button{
+        border: 2px solid red;
+        position: absolute;
+        left: 55%;
         top: 50%;
         transform: translate(-50%, -50%);
+    
+        display: inline-block;
+        padding: 9px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s ease;
+        margin-inline: 15px;
     }
+
+
+    .button:hover , .myButton:hover {
+
+        background-color: #0056b3;
+    }
+
+    .button:active , .myButton:hover{
+
+        background-color: #004785;
+    }
+    
+    .aga1{
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    
+      
 </style>
 
 </head>
 <body>
 
+    <div class="div1">
+        <h1 class="aga1">Quer namorar comigo?☻</h1>
 
-    <div>
-        <button id="botao1" onmouseover="onclick()">Sim!</button>
-
-        <button id="botao2" onmouseover="moveButton()">Não!</button>
+            <button class="button" id="botao1" onclick="aceitarNamoro()">Sim!</button>
+            <button class="myButton" id="botao2" onmouseover="moveButton()">Não!</button>
     </div>
     
 
+
+
+
     <!-- <script src="script.js"></script> -->
  <script >
+        function aceitarNamoro (){
+            alert('😍Own Amor, te farei muito feliz!😍')
+
+        }
+
+        //===================================================
 
         function moveButton() {
 
@@ -39,9 +103,25 @@
             var randomY = Math.floor(Math.random() * (windowHeight - buttonHeight));
 
             button.style.left = randomX + "px";
-            button.style.top = randomY + "px";
+     
+           button.style.top = randomY + "px";
     }
 
  </script>
 </body>
 </html>
+
+
+
+        <!-- <p>
+            function moveButton() { ... }: Declaração de uma função chamada moveButton.
+        var button = document.getElementById("myButton");: Obtém uma referência ao botão com o id "myButton" no DOM.
+        var buttonWidth = button.offsetWidth;: Obtém a largura do botão.
+        var buttonHeight = button.offsetHeight;: Obtém a altura do botão.
+        var windowWidth = window.innerWidth;: Obtém a largura da janela do navegador.
+        var windowHeight = window.innerHeight;: Obtém a altura da janela do navegador.
+        var randomX = Math.floor(Math.random() * (windowWidth - buttonWidth));: Gera uma posição horizontal aleatória dentro da janela do navegador, considerando a largura do botão.
+        var randomY = Math.floor(Math.random() * (windowHeight - buttonHeight));: Gera uma posição vertical aleatória dentro da janela do navegador, considerando a altura do botão.
+        button.style.left = randomX + "px";: Define a propriedade CSS left do botão para a posição horizontal aleatória gerada, com a unidade "px" para pixels.
+        button.style.top = randomY + "px";: Define a propriedade CSS top do botão para a posição vertical aleatória gerada, com a unidade "px" para pixels.
+        </p> -->
