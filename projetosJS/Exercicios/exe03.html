@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Move Button Randomly</title>
+<style>
+    #myButton {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+</head>
+<body>
+
+
+    <div>
+        <button id="botao1" onmouseover="onclick()">Sim!</button>
+
+        <button id="botao2" onmouseover="moveButton()">Não!</button>
+    </div>
+    
+
+    <!-- <script src="script.js"></script> -->
+ <script >
+
+        function moveButton() {
+
+            var button = document.getElementById("botao2");
+            var buttonWidth = button.offsetWidth;
+            var buttonHeight = button.offsetHeight;
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+
+            var randomX = Math.floor(Math.random() * (windowWidth - buttonWidth));
+            var randomY = Math.floor(Math.random() * (windowHeight - buttonHeight));
+
+            button.style.left = randomX + "px";
+            button.style.top = randomY + "px";
+    }
+
+ </script>
+</body>
+</html>
