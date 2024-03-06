@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+
+    <script>
+        alert('comecando ponto com');
+
+        var num1 = prompt('Digite o primeiro número:');
+        var operamini = prompt('Digite a operacao:')
+        var num2 = prompt('Digite o segundo número:')
+
+
+        function calcularOpera(num1,num2,operamini){
+            num1 = parseFloat(num1)
+            num2 = parseFloat(num2)
+
+            resultado = 0
+
+            if (operamini == 'soma'){
+               resultado = num1 + num2
+                
+            } else if(operamini == 'subtracao'){
+               resultado = num1 - num2 
+            }
+
+            return resultado;
+        }
+        
+
+        console.log(calcularOpera(num1,num2,operamini));
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

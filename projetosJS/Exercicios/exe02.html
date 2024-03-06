@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+
+    <script>
+        alert('Second one!');
+        function adicionarFoco(){
+            document.getElementById('inpor').style.background = 'yellow'
+        }
+
+        function addOutrasMerdas() {
+            document.getElementById('inpor').style.background = '#fff'
+
+            let campoNou = document.getElementById('inpor').value 
+
+            if(campoNou.length < 3 && campoNou.length >0){
+
+                document.getElementById('inpor').style.background = 'red'
+                
+            } else if(campoNou.length > 3 ){
+                document.getElementById('inpor').style.background = 'green'
+            }else{
+                document.getElementById('inpor').value = ''
+            }
+
+        }
+
+
+       
+
+
+    </script>
+
+    <style>
+        body{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h2>formula</h2>
+    
+    <input 
+    onfocus="adicionarFoco()"
+    onblur="addOutrasMerdas()"
+    type="text" 
+    id="inpor"
+    placeholder="digite qualquer coisa..."
+    >
+
+</body>
+</html>
