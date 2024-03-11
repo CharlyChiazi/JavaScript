@@ -12,7 +12,7 @@
     <style>
 
         body{
-            background-color: azure;
+            background-color: #c4c4c4;
             position: relative;
             height: 100vh;
             margin: 0;
@@ -31,6 +31,7 @@
         
         .sec1 {
             background-color: #fff;
+            border-radius:15px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -100,21 +101,28 @@
                     <!-- <p>
                         como faço para inserir uma interatividade js num botão de modo que ao tentar clicar nele, ele mude de lugar aleatoriamente no ecrã de modo que não se consiga clicar nele?
                     </p> -->
+                    
+                </section>
+                
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.getElementById("botao").addEventListener("click", moverBotao);
+                    });
+                    
+                    function aceitarNamoro(){
+                        alert('😍Own Amor, te farei muito feliz!😍')
+                       
+                    }
+                    
+                    function moverBotao() {
+                        const botao = document.getElementById("botao");
+                    }
+                    
+                    
+                    //var bishop = (res >= 20 && res <= 20 )? 'dream defender' : 'erroro'; 
 
-    </section>
-    	
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("botao").addEventListener("click", moverBotao);
-        });
-    
-        function aceitarNamoro(){
-            alert('😍Own Amor, te farei muito feliz!😍')
-        }
-    
-        function moverBotao() {
-            const botao = document.getElementById("botao");
-        }
+
+
     </script>
 </body>
 </html>

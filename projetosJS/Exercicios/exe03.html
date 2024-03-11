@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Move Button Randomly</title>
+<title>MOVENDO aleatoriamente</title>
 <style>
+
     .myButton {
         position: absolute;
         left: 40%;
@@ -64,6 +65,12 @@
         margin-top: 20px;
         
     }
+
+    section{
+        background-color: #c4c4c4;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
     
       
 </style>
@@ -71,21 +78,31 @@
 </head>
 <body>
 
-    <div class="div1">
-        <h1 class="aga1">Quer namorar comigo?☻</h1>
-
-            <button class="button" id="botao1" onclick="aceitarNamoro()">Sim!</button>
-            <button class="myButton" id="botao2" onmouseover="moveButton()">Não!</button>
-    </div>
-    
+    <section>
+        <div class="div1">
+            <!-- <h1 class="aga1">Quer namorar comigo?☻</h1> -->
+                <button class="button" id="botao1" onclick="aceitarNamoro()">Sim!</button>
+                <button class="myButton" id="botao2" onmouseover="moveButton()">Não!</button>
+        </div>
+        
+    </section>
 
 
 
 
     <!-- <script src="script.js"></script> -->
  <script >
+
+    var prova = prompt('Digite seu nome:')
+
+    var tudo = document.write("<h1> Quer namorar comigo " + prova + "?</h1>")
+
+    // tudo.style.backgroundColor = '#c4c4c4'
+    // tudo.style.textAlign = 'center'
+
         function aceitarNamoro (){
-            alert('😍Own Amor, te farei muito feliz!😍')
+            
+            alert('😍Own Amor, te farei muito feliz!😍'+ prova)
 
         }
 
@@ -104,7 +121,7 @@
 
             button.style.left = randomX + "px";
      
-           button.style.top = randomY + "px";
+            button.style.top = randomY + "px";
     }
 
  </script>
