@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    
+    // Exemplo de uma função simples
+const quadrado = (x) => x * x;
+
+console.log(quadrado(5)); // Saída: 25
+
+// Exemplo de uma função sem parâmetros
+const cumprimento = () => console.log("Olá!");
+
+cumprimento(); // Saída: Olá!
+
+// Exemplo de uma função com múltiplos parâmetros
+const soma = (a, b) => a + b;
+
+console.log(soma(3, 7)); // Saída: 10
+
+// Exemplo de uma função em um array de objetos
+const pessoas = [
+  { nome: "Alice", idade: 30 },
+  { nome: "Bob", idade: 25 },
+  { nome: "Carol", idade: 35 }
+];
+
+// Usando uma arrow function para mapear o array e retornar apenas os nomes das pessoas
+const nomes = pessoas.map((pessoa) => pessoa.nome);
+
+console.log(nomes); // Saída: ["Alice", "Bob", "Carol"]
+
+</body>
+</html>

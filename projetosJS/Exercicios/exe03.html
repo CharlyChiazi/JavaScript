@@ -6,6 +6,10 @@
 <title>MOVENDO aleatoriamente</title>
 <style>
 
+    body{
+        background-color:#f3f3f3;
+    }
+
     .myButton {
         position: absolute;
         left: 40%;
@@ -93,24 +97,43 @@
     <!-- <script src="script.js"></script> -->
  <script >
 
-    var prova = prompt('Digite seu nome:')
+    var nomeDoAmor = prompt('Digite seu nome:')
 
-    var tudo = document.write("<h1> Quer namorar comigo " + prova + "?</h1>")
+    if (nomeDoAmor){
+        document.write("<h1> Quer namorar comigo " + nomeDoAmor + "?</h1>")
+    } else{
+        document.write("<h1> Quer namorar comigo?</h1>")
+        
+    }
+
+    //var tudo = document.write("<h1> Quer namorar comigo " + nomeDoAmor + "?</h1>")
 
     // tudo.style.backgroundColor = '#c4c4c4'
     // tudo.style.textAlign = 'center'
 
         function aceitarNamoro (){
             
-            alert('😍Own Amor, te farei muito feliz!😍'+ prova)
+          
+            //document.write("<h1>😍Own Amor, te farei muito feliz!😍</h1>" +nomeDoAmor)
+           // document.write("😍Own Amor, te farei muito feliz!😍" +nomeDoAmor)
+            document.getElementById('ide').innerHTML= '😍Own Amor, te farei muito feliz!😍' + nomeDoAmor
+
+
+            setTimeout(function() {
+            
+            window.location.href = "./redirect.html"
+            //window.location.href = "https://www.novaurl.com"
+            
+            }, 3000)
 
         }
+
 
         //===================================================
 
         function moveButton() {
 
-            var button = document.getElementById("botao2");
+            var button = document.getElementById("botao2")
             var buttonWidth = button.offsetWidth;
             var buttonHeight = button.offsetHeight;
             var windowWidth = window.innerWidth;
@@ -125,8 +148,26 @@
     }
 
  </script>
+                <!-- ESTILO -->
+ <style>
+    body{
+        margin: auto;
+    }
+        #ide{
+            margin: auto;
+            background-color: #333;
+            color: #fff;
+        }
+ </style>
+
+
 </body>
 </html>
+
+
+<h1 id="ide">
+
+</h1>
 
 
 
