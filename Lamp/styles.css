@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.lamp-off {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50%;
+  }
+  
+  .lamp-on {
+    background-color: yellow;
+    box-shadow: 0 0 50px 20px yellow;
+  }
+
+  
+  
